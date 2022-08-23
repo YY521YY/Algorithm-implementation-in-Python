@@ -1,7 +1,8 @@
 #快速排序算法
+
+#方法一：递归（分治模式）
 #时间复杂度：O(nlogn)
 #空间复杂度：O(n)    
-
 def quicksort(arr):
   left=[]
   min=[]
@@ -21,3 +22,11 @@ def quicksort(arr):
     right=quicksort(right)
   return left+min+right
 print(auicksort([6,5,87,4,3,56,5,6,8,9,42,21,34,41]))
+
+#方法二：
+#时间复杂度：
+#空间复杂度：
+
+#方法三：
+#时间复杂度：
+#空间复杂度：
