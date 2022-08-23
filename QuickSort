@@ -1,5 +1,23 @@
 #快速排序算法
-#时间复杂度：
-#空间复杂度：
+#时间复杂度：O(nlogn)
+#空间复杂度：O(n)    
 
-def quicksort
+def quicksort(arr):
+  left=[]
+  min=[]
+  right=[]
+  if len(arr)<=1:
+    return arr
+  else:
+    k=arr[0]
+    for i in arr:
+      if i<k:
+        left.append(i)
+      elif i>k:
+        right.append(i)
+      else:
+        min.append(i)
+    left=quicksort(left)
+    right=quicksort(right)
+  return left+min+right
+print(auicksort([6,5,87,4,3,56,5,6,8,9,42,21,34,41]))
